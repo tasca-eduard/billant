@@ -1,0 +1,55 @@
+.status {
+  padding: 4px 12px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  width: min-content;
+  
+  &.paid {
+    background: $statusPaidBg;
+
+    .dot {
+      background: $statusPaidText;
+    }
+
+    span {
+      color: $statusPaidText;
+    }
+  }
+
+  &.pending {
+    background: $statusPendingBg;
+
+    .dot {
+      background: $statusPendingText;
+    }
+
+    span {
+      color: $statusPendingText;
+    }
+  }
+
+  &.unpaid {
+    background: $statusUnpaidBg;
+
+    .dot {
+      background: $statusUnpaidText;
+    }
+
+    span {
+      color: $statusUnpaidText;
+    }
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  span {
+    font-weight: 700;
+    padding-left: 6px;
+    font-size: 12px;
+  }
+}
