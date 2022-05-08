@@ -1,0 +1,41 @@
+.dim-text {
+    color: rgba($primaryText, .8);
+}
+
+.hide-mobile {
+    @media screen and (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+.hide-desktop {
+    @media screen and (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.loader {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: transparent;
+    border: 2px solid $accent;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    animation-name: spinner;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    margin: 0 auto;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
