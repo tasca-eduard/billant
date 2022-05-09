@@ -9,15 +9,17 @@ const Home: NextPage = () => {
         <h2>Tenants details</h2>
         <br />
         <p>
-          Invoices received on <strong>May 2022</strong>. 
-          <br /> 
-          These reflect the amounts from last month <small>(most likely)</small>.
+          Invoices received on <strong>May 2022</strong>.
+          <br />
+          This report reflect the amounts from last month <small>(most likely)</small>.
           <br />
           <br />
           Ask your administrator to keep everything up to date.
         </p>
         <br />
-        <div className="table-component">
+        <div className="slidish">
+          <div className="table-component">
+
             <table className="table">
               <thead className="table-head">
                 <tr className="row">
@@ -48,6 +50,11 @@ const Home: NextPage = () => {
                   </th>
                   <th className="data head">
                     <div className="content">
+                      Rent
+                    </div>
+                  </th>
+                  <th className="data head">
+                    <div className="content">
                       <strong>Total</strong>
                     </div>
                   </th>
@@ -70,9 +77,18 @@ const Home: NextPage = () => {
                       Ed T.
                     </div>
                   </td>
+                  <td className="data paid">
+                    <div className="content">
+                      <span className="amount">
+                        35 
+                      </span>
+                    </div>
+                  </td>
                   <td className="data">
                     <div className="content">
-                      35 <sup>lei</sup>
+                      <span className="amount">
+
+                      </span>
                     </div>
                   </td>
                   <td className="data">
@@ -80,19 +96,21 @@ const Home: NextPage = () => {
 
                     </div>
                   </td>
-                  <td className="data">
+                  <td className="data paid">
                     <div className="content">
-                    
+                      <span className="amount">
+                        10 
+                      </span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-                    10 <sup>lei</sup>
+                      <span className="amount"></span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-                      <strong>45</strong> <sup>lei</sup>
+                      <strong>45</strong> 
                     </div>
                   </td>
                   <td className="data">
@@ -115,29 +133,38 @@ const Home: NextPage = () => {
                       Raul L.
                     </div>
                   </td>
-                  <td className="data">
+                  <td className="data pending">
                     <div className="content">
-                      35 <sup>lei</sup>
+                      <span className="amount">
+                        35 
+                      </span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-
+                      <span className="amount"></span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-
+                      <span className="amount"></span>
+                    </div>
+                  </td>
+                  <td className="data unpaid">
+                    <div className="content">
+                      <span className="amount">
+                        10 
+                      </span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-                      10 <sup>lei</sup>
+                      <span className="amount"></span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-                      <strong>45</strong> <sup>lei</sup>
+                      <strong>45</strong> 
                     </div>
                   </td>
                   <td className="data">
@@ -160,29 +187,33 @@ const Home: NextPage = () => {
                       Rafaela N.
                     </div>
                   </td>
-                  <td className="data">
+                  <td className="data paid">
                     <div className="content">
-                      35 <sup>lei</sup>
+                      <span className="amount">35 </span>
+                    </div>
+                  </td>
+                  <td className="data pending">
+                    <div className="content">
+                      <span className="amount">43 </span>
+                    </div>
+                  </td>
+                  <td className="data unpaid">
+                    <div className="content">
+                      <span className="amount">55 </span>
+                    </div>
+                  </td>
+                  <td className="data paid">
+                    <div className="content">
+                      <span className="amount">10 </span>
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-
                     </div>
                   </td>
                   <td className="data">
                     <div className="content">
-
-                    </div>
-                  </td>
-                  <td className="data">
-                    <div className="content">
-                      10 <sup>lei</sup>
-                    </div>
-                  </td>
-                  <td className="data">
-                    <div className="content">
-                      <strong>45</strong> <sup>lei</sup>
+                      <strong>45</strong> 
                     </div>
                   </td>
                   <td className="data">
@@ -201,7 +232,9 @@ const Home: NextPage = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
         </div>
+
         <small>For any questions or suggestions discuss with <strong>Ed</strong>.</small>
       </div>
     </div>

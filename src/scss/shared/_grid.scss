@@ -1,5 +1,5 @@
 .container {
-    max-width: 1700px;
+    max-width: 1800px;
     width: 100%;
     margin: 0 auto;
     padding-inline: 40px;
@@ -19,6 +19,24 @@
         &:not(.neutral) {
             padding-inline: 20px;
         }
+    }
+}
+
+.slidish {
+    position: relative;
+    margin: 0 -10px;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        box-shadow: 0 0 15px 15px $primaryBg;
+    }
+
+    &::after {
+      right: 0;
     }
 }
 
