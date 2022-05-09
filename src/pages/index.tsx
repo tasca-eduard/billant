@@ -230,6 +230,56 @@ const Home: NextPage = () => {
                     </div>
                   </td>
                 </tr>
+                <tr className="row">
+                  <td className="data">
+                    <div className="content">
+                  
+
+                    </div>
+                  </td>
+                  <td className="data paid">
+                    <div className="content">
+                      <span className="amount">
+                        105 
+                      </span>
+                    </div>
+                  </td>
+                  <td className="data">
+                    <div className="content">
+                      <span className="amount"></span> 
+                    </div>
+                  </td>
+                  <td className="data">
+                    <div className="content">
+                      <span className="amount"></span> 
+                    </div>
+                  </td>
+                  <td className="data paid">
+                    <div className="content">
+                      <span className="amount">
+                        30 
+                      </span>
+                    </div>
+                  </td>
+                  <td className="data">
+                    <div className="content">
+                      <span className="amount"></span> 
+                    </div>
+                  </td>
+                  <td className="data">
+                    <div className="content">
+                      <span className="amount">135</span> 
+                    </div>
+                  </td>
+                  <td className="data">
+                    <div className="content">
+                    </div>
+                  </td>
+                  <td className="data">
+                    <div className="content">
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

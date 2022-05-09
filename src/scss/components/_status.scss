@@ -1,44 +1,37 @@
 .status {
-  padding: 4px 12px;
   border-radius: 15px;
   display: flex;
   align-items: center;
   width: min-content;
   width: 100%;
-  
-  &.paid {
-    background: $statusPaidBg;
 
+  &.paid {
     .dot {
-      background: $statusPaidText;
+      border: 1px solid $statusPaidBg;
     }
 
     span {
-      color: $statusPaidText;
+      color: $statusPaidBg;
     }
   }
 
   &.pending {
-    background: $statusPendingBg;
-
     .dot {
-      background: $statusPendingText;
+      border: 1px solid $statusPendingBg;
     }
 
     span {
-      color: $statusPendingText;
+      color: $statusPendingBg;
     }
   }
 
   &.unpaid {
-    background: $statusUnpaidBg;
-
     .dot {
-      background: $statusUnpaidText;
+      border: 1px solid $statusUnpaidBg;
     }
 
     span {
-      color: $statusUnpaidText;
+      color: $statusUnpaidBg;
     }
   }
 
@@ -49,7 +42,6 @@
   }
 
   span {
-    font-weight: 700;
     padding-left: 6px;
     font-size: 12px;
   }
