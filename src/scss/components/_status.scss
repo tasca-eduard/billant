@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   width: min-content;
+  width: 100%;
   
   &.paid {
     background: $statusPaidBg;

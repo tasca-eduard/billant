@@ -4,7 +4,58 @@
     width: 100%;
     border-radius: 5px;
     border-spacing: 0;
-    text-align: left;
+
+    .table-head {
+      .data {
+        &:first-of-type {
+          .content {
+            background-image: linear-gradient(to right, $primaryBg 30%, $ternaryBg 70%);
+          }
+        }
+  
+        &:last-of-type {
+          .content {
+            background-image: linear-gradient(to left, $primaryBg 30%, $ternaryBg 70%);
+          }
+        }
+      }  
+    }
+
+    .table-body {
+      .data {
+        padding: 12px 0;
+
+        &:hover,
+        &:focus {
+          .content {
+            background: lighten($secondaryBg, 3%) !important;
+          }
+        }
+
+        &:first-of-type {
+          .content {
+            background-image: linear-gradient(to right, $primaryBg 30%, $secondaryBg 70%);
+          }
+        }
+  
+        &:last-of-type {
+          .content {
+            background-image: linear-gradient(to left, $primaryBg 30%, $secondaryBg 70%);
+          }
+        }
+      }  
+
+      .row {
+        &:hover,
+        &:focus {
+          .data {
+            .content {
+              background: lighten($secondaryBg, 1%);
+            }
+          }
+        }
+      }
+    }
 
     .data {
       padding: 14px 0;
@@ -14,21 +65,50 @@
           font-weight: 700;
           border-top-left-radius: 6px;
           border-bottom-left-radius: 6px;
+          justify-content: flex-start;
         }
       }
 
       &:last-of-type {
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
+
+        .content {
+          justify-content: flex-end;
+        }
       }
+
+      &:nth-last-of-type(2) {
+        width: 134px;
+      }
+
+      &.paid {
+        .amount {
+          color: $statusPaidBg;
+        }
+      }
+
+      &.pending {
+        .amount {
+          color: $statusPendingBg;
+        }
+      }
+
+      &.unpaid {
+        .amount {
+          color: $statusUnpaidBg;
+        }
+      }
+    }
+
+    .amount {
+      font-weight: bold;
+      text-align: center;
     }
   
     .head {
       .content {
         color: rgba($primaryText, .8);
-      }
-  
-      .content {
         background: $ternaryBg;
       }
     }
@@ -39,15 +119,11 @@
       color: $primaryText;
       height: 60px;
       display: flex;
+      justify-content: center;
       align-items: center;
+      transition: .1s;
     }
   
-    sup {
-      color: rgba($primaryText, .8);
-      padding-bottom: 6px;
-      padding-left: 6px;
-    }
-
     @media screen and (max-width: 960px) {
       width: auto;
 
@@ -63,5 +139,4 @@
     overflow-x: auto;
   }
 }
-
 
