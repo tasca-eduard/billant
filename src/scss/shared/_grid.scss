@@ -24,7 +24,6 @@
 
 .slidish {
     position: relative;
-    margin: 0 -10px;
 
     &:after,
     &:before {
@@ -33,6 +32,7 @@
         top: 0;
         bottom: 0;
         box-shadow: 0 0 15px 15px $primaryBg;
+        z-index: 2;
     }
 
     &::after {

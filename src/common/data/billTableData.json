@@ -1,0 +1,54 @@
+{
+  "tenants": [
+    {
+      "id": "0",
+      "name": "Ed T.",
+      "gas": 35,
+      "power": null,
+      "utilities": null,
+      "internet": 10,
+      "rent": 350,
+      "total": 45,
+      "status": "paid",
+      "lastUpdate": "5/8/2022, 10:41:00 PM"
+    },
+    {
+      "id": "1",
+      "name": "Raul L.",
+      "gas": 35,
+      "power": 111,
+      "utilities": null,
+      "internet": 10,
+      "rent": 350,
+      "total": 45,
+      "status": "pending",
+      "lastUpdate": "5/8/2022, 10:41:00 PM"
+    },
+    {
+      "id": "2",
+      "name": "Rafaela N.",
+      "gas": 35,
+      "power": null,
+      "utilities": 33,
+      "internet": 5,
+      "rent": 700,
+      "total": 4522,
+      "status": "pending",
+      "lastUpdate": "5/8/2022, 10:41:00 PM"
+    }
+  ],
+  "details": {
+    "date": {
+      "year": 2022,
+      "month": 5
+    },
+    "totals": {
+      "gas": 105,
+      "power": null,
+      "utilities": null,
+      "internet": 30,
+      "rent": null,
+      "total": 135
+    }
+  }
+}
